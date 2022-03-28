@@ -19,14 +19,17 @@ public class Var_06 {
 		System.out.println(++num1);
 		System.out.println(num1++);
 		
-		num1 = 0;
+		num1 = 1;
 		num1 = ++num1 * 3;
 		System.out.println(num1);
 		
-		num1 = 0;
+		num1 = 1;
 		num1 = num1++ * 3;
+		System.out.println(num1++);
 		System.out.println(num1);
 		
+		int num2 = num1 + 1;
+		System.out.println(num2);
 	}
 
 }
