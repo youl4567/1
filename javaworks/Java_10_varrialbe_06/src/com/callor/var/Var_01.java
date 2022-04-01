@@ -7,7 +7,7 @@ public class Var_01 {
 		//1~1000 까지의 범위중 임의 수 1개를 생성하여 intNum1에 저장
 		int intNum1 = (int)(Math.random() * 1000) +1;
 		int intNum2 = (int)(Math.random() * 1000) +1;
-		
+
 		System.out.printf("\tintNum1 : %d\n", intNum1);
 		System.out.printf("\tintNum2 : %d\n", intNum2);
 		
