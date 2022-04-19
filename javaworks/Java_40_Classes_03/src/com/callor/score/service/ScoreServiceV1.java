@@ -56,5 +56,19 @@ public class ScoreServiceV1 {
 			System.out.printf("%3.2f\n", scores[i].getfAvg());
 		}
 		System.out.println(Line.sLine(50));
+		int intKorSum = 0;
+		int intEngSum = 0;
+		int intMathSum = 0;
+		int Sum = 0;
+		float AvgSum = 0;
+		for(int i = 0 ; i < scores.length ; i++) {
+			intKorSum += scores[i].getIntKor();
+			intEngSum += scores[i].getIntEng();
+			intMathSum += scores[i].getIntMath();
+			Sum += scores[i].getIntSum();
+			AvgSum += scores[i].getfAvg() / scores.length;
+		}
+		System.out.printf("총점\t%d\t%d\t%d\t%d\t%f",intKorSum, intEngSum, intMathSum, Sum, AvgSum);
+		
 	}
 }

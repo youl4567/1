@@ -10,7 +10,7 @@ public class Var_01 {
 	// 여기에서 부터 실제 명령문 코드가 작성되는 곳
 	public static void main(String[] args) {
 		
-		// 코드에서 사용하는 수의 치계
+		// 코드에서 사용하는 수의 체계
 		// 정수, 실수
 		// 정수형(int type), 실수형(float type)
 		
