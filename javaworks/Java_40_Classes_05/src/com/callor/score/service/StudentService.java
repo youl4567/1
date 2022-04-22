@@ -9,6 +9,12 @@ import com.callor.score.domain.StudentVO;
  * 3. 학번을 argument 로 받아서 해당 학생데이터를 리턴해주기
  */
 public interface StudentService {
+	
+	/*
+	 * 추상 메서드
+	 * 메서드의 접근제한자(public), 메서드의 이름, 매개변수, return type 만 정의한 것
+	 * 연산(실행)되는 실제 코드가 없는 메서드
+	 */
 
 	public void loadStudent();
 	public StudentVO[] getStudents();

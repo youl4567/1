@@ -10,7 +10,7 @@ import com.callor.score.service.StudentService;
 
 public class StudentServiceImplV1 implements StudentService {
 
-	private StudentVO[] stVO;
+	private StudentVO[] stList;
 	private String stFile;
 
 	/*
@@ -18,9 +18,9 @@ public class StudentServiceImplV1 implements StudentService {
 	 */
 	public StudentServiceImplV1(String stFile, int length) {
 		this.stFile = stFile;
-		this.stVO = new StudentVO[length];
-		for(int i = 0 ; i < this.stVO.length ; i++ ) {
-			this.stVO[i] = new StudentVO();
+		this.stList = new StudentVO[length];
+		for(int i = 0 ; i < this.stList.length ; i++ ) {
+			this.stList[i] = new StudentVO();
 		}
 	}
 	
@@ -47,7 +47,7 @@ public class StudentServiceImplV1 implements StudentService {
 		}
 		*/
 	
-
+		int index = 0; // stList의 요소를 가리키는 값
 		while(scan.hasNext()) {
 			String stLine = scan.nextLine();
 			System.out.println(stLine);
@@ -66,9 +66,23 @@ public class StudentServiceImplV1 implements StudentService {
 			stVO.setStDept(stInfos[4]);
 			stVO.setStAddr(stInfos[5]);
 			
-			
+			stList[index++] = stVO;
+		} // end while 여기를 지나면 stLinst 에 모든 데이터가 담겨있을 것이다.
+		this.printStudents();
+	}	// end loadStudent
+	
+	// V1 에서 stList 에 담긴 데이터들을 확인하기 위하여
+	//	내부용으로 만든 method
+	private void printStudents() {
+		
+		for(int i = 0 ; i <stList.length ; i++) {
+			System.out.println(stList[i].toString());
 		}
-	}	
+		
+		for(StudentVO vo : stList) {
+			System.out.println(vo.toString());
+		}
+	}
 		
 	@Override
 	public StudentVO[] getStudents() {
