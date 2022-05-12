@@ -53,7 +53,7 @@ public class StudentServiceImplV1 implements StudentService {
 				
 				// 읽어들인 문자열을 콜론(:)을 기준으로 분해하기
 				// 분해된 문자열들을 문자열 배열로 만들고 저장하기
-				String[] stInfo = stLine.split(":");
+				String[] stInfo = stLine.split(",");
 				
 				// 분해된 문자열이 담긴 배열에서 각 요소 값을 읽어 변수에 담기
 				String stNum = stInfo[indexinfo.ST.ST_NUM];

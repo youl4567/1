@@ -21,7 +21,7 @@ public class InputServiceImplV2 extends InputServiceImplV1 {
 	@Override
 	public Integer selectTodo() {
 		System.out.println(Line.dLine(50));
-		System.out.print("할일선택(QUIT:종료");
+		System.out.print("할일선택(QUIT:종료)");
 		String selectNum = scan.nextLine();
 		Integer intNum = 0;
 		

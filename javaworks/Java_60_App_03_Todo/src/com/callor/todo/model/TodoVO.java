@@ -28,8 +28,8 @@ public class TodoVO {
 	public String toString() {
 		
 		String result = String.format("%s\t", tKey);
-		result += String.format("%s=t", sdate);
-		result += String.format("%s=t", stime);
+		result += String.format("%s\t", sdate);
+		result += String.format("%s\t", stime);
 		
 		// 3항 연산
 		// edate== null 가 true 이면 "진행중" 문자열을 compStr에 저장
