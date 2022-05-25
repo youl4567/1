@@ -23,7 +23,6 @@ public class Exec04 {
 		}
 		for(BookVO vo : bookList) {
 			System.out.println(vo.toString());
-			System.out.println(vo.toString());
 		}
 		
 		bookList = new ArrayList<>();
@@ -35,6 +34,9 @@ public class Exec04 {
 			String title = (int)((Math.random() * 1000) + 100) + "";
 			bookVO1.setTitle(title);
 			bookList.add(bookVO1);
+		}
+		for(BookVO vo : bookList) {
+			System.out.println(vo.toString());
 		}
 	}
 

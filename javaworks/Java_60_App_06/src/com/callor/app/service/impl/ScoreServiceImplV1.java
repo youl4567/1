@@ -13,7 +13,7 @@ public class ScoreServiceImplV1 implements ScoreService {
 	 * 클래스 영역(필드영역)에서 변수, 객체 배열 등을 선언만 하고
 	 * private 으로 접근제한을 하고
 	 * 객체와 배열은 final 로 선언하고
-	 * (java 에서는 기본, srping 임의) 생성자 method 에서
+	 * (java 에서는 기본, spring 임의) 생성자 method 에서
 	 * 선언된 변수를 초기화(생성, 사용할 준비)를 한다.
 	 * 
 	 * 만약 이 클래스를 상속할 수 있도록 하려면

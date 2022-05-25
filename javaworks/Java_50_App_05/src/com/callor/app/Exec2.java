@@ -14,7 +14,7 @@ public class Exec2 {
 		
 		System.out.println("월급 : " + wage);
 		int intW = 50000;
-		for(int i = 0 ; i<7 ; i++) {
+		for(int i = 0 ; i < 7 ; i++) {
 			wage
 			if(i % 2 == 0 ) {
 				intW = intW / 5;
